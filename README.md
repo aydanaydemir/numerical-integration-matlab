@@ -29,7 +29,7 @@ This method uses trapezoids instead of rectangles, connecting the function value
 The project evaluates the accuracy of each method across different subinterval sizes ($n = 10, 50, 100, 1000$).
 
 **3. Error Convergence Comparison (Log-Log Scale):**
-This plot demonstrates the convergence order of the methods. As seen below, the Midpoint and Trapezoidal rules exhibit second-order convergence ($O(h^2)$), while the Left- and Right-Endpoint rules show first-order convergence ($O(h)$).
+This plot demonstrates the convergence order of the methods. As seen below, the Midpoint and Trapezoidal rules exhibit second-order convergence (`O(h^2)`), while the Left- and Right-Endpoint rules show first-order convergence (`O(h)`).
 
 <img width="800" height="579" alt="error_convergence_comp" src="https://github.com/user-attachments/assets/320d3746-466b-4476-a867-b293c6bb858e" />
 
