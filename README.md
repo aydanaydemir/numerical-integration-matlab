@@ -4,8 +4,38 @@ This repository contains MATLAB scripts developed for numerical integration anal
 
 ---
 
-## 📌 Project 1: Classical Integration Methods (Assignment 7)
-This section evaluates the numerical integration of the function $f(x) = x^2 + \sin(5x)$ on the interval $[0, 5]$.
+## 📌 Project 1: Monte Carlo Integration (Assignment 1)
+This section evaluates the numerical integration of the function $f(x) = \cos(x) - 0.1x$ on the interval $[-4, 6]$ using the probabilistic Monte Carlo method. It is specifically designed to handle functions that take both positive and negative values.
+
+### Methods Implemented
+* Monte Carlo Integration with Bounding Box
+* Positive and Negative Area Tracking
+* Scatter Plot Visualisations for Point Distributions
+
+### 📐 Geometric Visualisation
+To understand how the Monte Carlo method approximates the net area under the curve, the script generates geometric visualisations showing the distribution of randomly generated points. 
+* **Red markers:** Positive area under the curve
+* **Green markers:** Negative area under the curve
+* **Blue markers:** Points falling outside the integral area
+
+**Point Distribution (N = 1000):**
+<img width="700" height="500" alt="monte_carlo_distribution_1000" src="dist_1000.png" />
+
+**Point Distribution (N = 10000):**
+<img width="700" height="500" alt="monte_carlo_distribution_10000" src="dist_10000.png" />
+
+### 📊 Error and Convergence Analysis
+This plot demonstrates the probabilistic convergence of the Monte Carlo method. Across 3 different simulations, the relative error consistently decreases proportionally to $1/\sqrt{N}$ as the total number of points increases.
+
+<img width="700" height="500" alt="relative_error_analysis" src="error_plot.png" />
+
+### 🚀 How to Run (Project 1)
+Simply open `monte_carlo_integral.m` in MATLAB and run the script. It will output the exact analytical value, a numerical simulation table in the command window, and generate all the visual plots automatically.
+
+---
+
+## 📌 Project 6: Classical Integration Methods (Assignment 6)
+This section evaluates the numerical integration of the function $f(x) = x^2 + \sin(5x)$ on the interval $[0, 5]$ using four classical deterministic numerical methods.
 
 ### Methods Implemented
 * Left-Endpoint Rectangle Rule
@@ -39,39 +69,5 @@ This graph illustrates how the numerical approximations from all four methods co
 
 <img width="956" height="630" alt="convergence" src="https://github.com/user-attachments/assets/36bffd07-8daa-4c26-bb84-b9c136f389b1" />
 
-### 🚀 How to Run (Project 1)
+### 🚀 How to Run (Project 6)
 Simply open `numerical_integration.m` in MATLAB and run the script. It will output the exact analytical value, a numerical comparison table in the command window, and generate all the visual plots automatically.
-
----
-
-## 📌 Project 2: Monte Carlo Integration (Assignment 2)
-This section evaluates the numerical integration of the function $f(x) = \cos(x) - 0.1x$ on the interval $[-4, 6]$. It is specifically updated to handle functions that take both positive and negative values.
-
-### Methods Implemented
-* Monte Carlo Integration with Bounding Box
-* Positive and Negative Area Tracking
-* Scatter Plot Visualisations for Point Distributions
-
-### 📐 Geometric Visualisation
-To understand how the Monte Carlo method approximates the net area under the curve, the script generates geometric visualisations showing the distribution of randomly generated points.
-
-**1. Point Distribution (N = 1000):**
-The algorithm checks if the randomly generated points fall into the positive region (red markers) or the negative region (green markers). The net integral is derived by subtracting the negative area's impact from the positive area. Blue markers indicate points outside the integral area.
-
-<img width="700" height="500" alt="monte_carlo_distribution_1000" src="dist_1000.png" />
-
-**2. Point Distribution (N = 10000):**
-As the number of random points increases, the definition of the positive and negative areas under the curve becomes significantly sharper and more accurate.
-
-<img width="700" height="500" alt="monte_carlo_distribution_10000" src="dist_10000.png" />
-
-### 📊 Error and Convergence Analysis
-The project evaluates the accuracy of the method across logarithmically increasing point sizes ($N = 10^2$ to $10^8$) simulated multiple times to account for statistical variance.
-
-**3. Relative Error Convergence Comparison (Log-Log Scale):**
-This plot demonstrates the probabilistic convergence of the Monte Carlo method. Across 3 different simulations, the relative error decreases proportionally to $1/\sqrt{N}$, which is the expected convergence order for Monte Carlo integration.
-
-<img width="700" height="500" alt="relative_error_analysis" src="error_plot.png" />
-
-### 🚀 How to Run (Project 2)
-Simply open `monte_carlo_integral.m` in MATLAB and run the script. It will output the exact analytical value, a numerical simulation table in the command window, and generate all the visual plots automatically.
