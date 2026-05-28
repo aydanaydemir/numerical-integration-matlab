@@ -18,18 +18,26 @@ To understand how the Monte Carlo method approximates the net area under the cur
 * **Green markers:** Negative area under the curve
 * **Blue markers:** Points falling outside the integral area
 
+**Point Distribution (N = 100):**
+
+<img width="700" height="500" alt="monte_carlo_distribution_1000" src="<img width="923" height="720" alt="dist_100" src="https://github.com/user-attachments/assets/59f29c1c-a0fc-43e3-ab2c-57b4bb39fe74" />
+" />
+  
 **Point Distribution (N = 1000):**
 
-<img width="700" height="500" alt="monte_carlo_distribution_1000" src="dist_1000.png" />
+<img width="700" height="500" alt="monte_carlo_distribution_1000" src="<img width="923" height="720" alt="dist_1000" src="https://github.com/user-attachments/assets/4682ba1a-443c-4321-ad41-8ac34a751711" />
+" />
 
 **Point Distribution (N = 10000):**
 
-<img width="700" height="500" alt="monte_carlo_distribution_10000" src="dist_10000.png" />
+<img width="700" height="500" alt="monte_carlo_distribution_10000" src="<img width="923" height="720" alt="dist_10000" src="https://github.com/user-attachments/assets/9d78eae7-b7bb-4310-8fb8-8235108ea498" />
+" />
 
 ### 📊 Error and Convergence Analysis
 This plot demonstrates the probabilistic convergence of the Monte Carlo method. Across 3 different simulations, the relative error consistently decreases proportionally to $1/\sqrt{N}$ as the total number of points increases.
 
-<img width="700" height="500" alt="relative_error_analysis" src="error_plot.png" />
+<img width="700" height="500" alt="relative_error_analysis" src="<img width="953" height="736" alt="error_plot" src="https://github.com/user-attachments/assets/441084c0-dd4c-4f49-84d7-2370660eff96" />
+" />
 
 ### 🚀 How to Run (Project 1)
 Simply open `monte_carlo_integral.m` in MATLAB and run the script. It will output the exact analytical value, a numerical simulation table in the command window, and generate all the visual plots automatically.
