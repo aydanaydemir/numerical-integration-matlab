@@ -1,5 +1,5 @@
 %% ============================================================
-%  NUMERICAL ANALYSIS — ASSIGNMENT 7
+%  NUMERICAL ANALYSIS — ASSIGNMENT 6
 %  Numerical Integration of f(x) = x^2 + sin(5x) on [0, 5]
 %
 %  Methods implemented:
