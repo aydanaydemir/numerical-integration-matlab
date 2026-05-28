@@ -1,5 +1,5 @@
 %% ============================================================
-%  NUMERICAL ANALYSIS — ASSIGNMENT 2
+%  NUMERICAL ANALYSIS — ASSIGNMENT 1
 %  Monte Carlo Integration for Functions with Negative Values
 %  Integrating f(x) = cos(x) - 0.1x on [-4, 6]
 %
