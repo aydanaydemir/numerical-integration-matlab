@@ -19,9 +19,11 @@ To understand how the Monte Carlo method approximates the net area under the cur
 * **Blue markers:** Points falling outside the integral area
 
 **Point Distribution (N = 1000):**
+
 <img width="700" height="500" alt="monte_carlo_distribution_1000" src="dist_1000.png" />
 
 **Point Distribution (N = 10000):**
+
 <img width="700" height="500" alt="monte_carlo_distribution_10000" src="dist_10000.png" />
 
 ### 📊 Error and Convergence Analysis
